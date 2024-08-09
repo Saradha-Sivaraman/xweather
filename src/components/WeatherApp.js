@@ -39,7 +39,7 @@ const Weather = () => {
           type="text"
           value={city}
           onChange={(e) => setCity(e.target.value)}
-          placeholder="Enter city"
+          placeholder="Enter city name"
         />
         <button type="submit" className="searchButton">Search</button>
       </form>
