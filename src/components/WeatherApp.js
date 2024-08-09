@@ -10,7 +10,7 @@ const Weather = () => {
   const [loading, setLoading] = useState(false);
 
   //const apiKey = 'YOUR_API_KEY'; // Replace with your OpenWeatherMap API key
-  let url =`http://api.weatherapi.com/v1/current.json?key=7b9c8208bc4c40aa92482251240808&q=${city}&aqi=no`
+  let url =`https://api.weatherapi.com/v1/current.json?key=7b9c8208bc4c40aa92482251240808&q=${city}&aqi=no`
 
   const fetchWeather = async () => {
     setLoading(true);
