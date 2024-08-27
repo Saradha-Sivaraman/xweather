@@ -10,7 +10,7 @@ const Weather = () => {
   const [loading, setLoading] = useState(false);
 
   //const apiKey = 'YOUR_API_KEY'; // Replace with your OpenWeatherMap API key
-  let url =`https://api.weatherapi.com/v1/current.json?key=7b9c8208bc4c40aa92482251240808&q=${city}&aqi=no`
+  let url =`https://api.weatherapi.com/v1/current.json?key=3b5d35f945e84173ab364648242708&q=${city}&aqi=no`
 
   const fetchWeather = async () => {
     setLoading(true);
@@ -43,7 +43,7 @@ const Weather = () => {
         />
         <button type="submit" className="searchButton">Search</button>
       </form>
-      {loading && <p>Loading data…</p>}
+      {loading && "Loading data…"}
       {error && <p>{error}</p>}
       {weather && (
         <div className="weather-cards">
