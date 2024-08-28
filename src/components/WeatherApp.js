@@ -16,6 +16,7 @@ const Weather = () => {
     setLoading(true);
     setError('');
     try {
+      await new Promise(resolve => setTimeout(resolve, 1000));
       const response = await axios.get(url);
       setWeather(response.data);
     } catch (err) {
